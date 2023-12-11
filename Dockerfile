@@ -9,6 +9,8 @@ ENV VOLTA_HOME /root/.volta
 # make sure packages managed by volta will be in PATH
 ENV PATH $VOLTA_HOME/bin:$PATH
 
+WORKDIR /home/container
+
 RUN curl https://get.volta.sh | bash && \
     volta install node@20 && \
     apt install git -y && \
