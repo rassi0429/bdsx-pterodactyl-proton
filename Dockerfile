@@ -13,11 +13,7 @@ WORKDIR /home/container
 
 RUN curl https://get.volta.sh | bash && \
     volta install node@20 && \
-    apt install git -y && \
-    git clone https://github.com/bdsx/bdsx && \
-    cd bdsx && ./update.sh && \
-    sed -i '13s/^/#/' /home/container/bdsx/bdsx.sh && \
-    sed -i '16iWINE="proton run"' /home/container/bdsx/bdsx.sh
+    apt install git -y
 
 USER container
 COPY ./entrypoint.sh /entrypoint.sh
