@@ -18,6 +18,7 @@ RUN cd bdsx && ./update.sh
 RUN sed -i '13s/^/#/' /home/container/bdsx/bdsx.sh
 RUN sed -i '16iWINE="proton run"' /home/container/bdsx/bdsx.sh
 
+USER container
 COPY ./entrypoint.sh /entrypoint.sh
 
 CMD [ "/bin/bash", "/entrypoint.sh" ]
