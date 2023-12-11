@@ -19,8 +19,6 @@ RUN sed -i '13s/^/#/' /home/container/bdsx/bdsx.sh
 RUN sed -i '16iWINE="proton run"' /home/container/bdsx/bdsx.sh
 
 USER container
-ENV  USER=container HOME=/home/container
-WORKDIR /home/container
 COPY ./entrypoint.sh /entrypoint.sh
 
 CMD [ "/bin/bash", "/entrypoint.sh" ]
