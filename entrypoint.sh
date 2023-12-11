@@ -6,9 +6,4 @@ export STEAM_COMPAT_DATA_PATH="/home/container/.steam/steam/steamapps/compatdata
 mkdir -p $STEAM_COMPAT_DATA_PATH
 
 
-# Replace Startup Variables
-MODIFIED_STARTUP=`eval echo $(echo ${STARTUP} | sed -e 's/{{/${/g' -e 's/}}/}/g')`
-echo ":/home/container/$ ${MODIFIED_STARTUP}"
-
-# Run the Server
-${MODIFIED_STARTUP}
+bash /home/container/bdsx/bdsx.sh
