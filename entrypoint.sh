@@ -6,4 +6,3 @@ export STEAM_COMPAT_DATA_PATH="/home/container/.steam/steam/steamapps/compatdata
 mkdir -p $STEAM_COMPAT_DATA_PATH
 
 
-bash /home/container/bdsx/bdsx.sh
