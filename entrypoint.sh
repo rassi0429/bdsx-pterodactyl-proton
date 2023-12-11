@@ -7,3 +7,5 @@ mkdir -p $STEAM_COMPAT_DATA_PATH
 
 echo hi
 ls -la /home/container/
+
+${STARTUP}
