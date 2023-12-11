@@ -1,3 +1,4 @@
+#!/bin/bash
 cd /home/container/
 
 # Create Directories and Enviroment Variables for Proton
