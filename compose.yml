@@ -1,0 +1,7 @@
+version: "3"
+services:
+  app:
+    build: .
+    tty: true
+    ports:
+      - "19133:19132/udp"
