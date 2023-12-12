@@ -25,5 +25,6 @@ RUN set -uex; \
 
 USER container
 COPY ./entrypoint.sh /entrypoint.sh
-
+COPY ./sampleecho.exe /sampleecho.exe
+ 
 CMD [ "/bin/sh", "/entrypoint.sh" ]
