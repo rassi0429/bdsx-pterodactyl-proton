@@ -1,4 +1,4 @@
-#!/bin/ash
+#!/bin/sh
 cd /home/container/
 
 git clone https://github.com/bdsx/bdsx
